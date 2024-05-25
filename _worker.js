@@ -6,8 +6,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '788b7aa0-5f6d-4848-8ca0-c64932af8339';
 
-const proxyIPs =['https://raw.githubusercontent.com/alighadrboland/cf-clean-ip-resolver/main/list.json'];
-let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+const proxyIP =['pa.alighadrboland.ir'];
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
